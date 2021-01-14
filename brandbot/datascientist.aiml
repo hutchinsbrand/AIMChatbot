@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    
+	<category>
+     <pattern>YES</pattern>
+     <topic>ORGANIZED</topic>
+     <template>
+         Great! What is your relationship with math? Do you really enjoy it or have strong skills in it?
+         <think>
+             <set name = "topic">MATH</set>
+         </think>
+     </template>
+ </category>
+ 
+ <category>
+     <pattern>YES</pattern>
+     <topic>MATH</topic>
+     <template>
+         Math is pretty cool. I think you might be interested in a Data Scientist position.
+         <delay>1</delay>
+         <card>
+             <image>https://cdn.pixabay.com/photo/2015/12/01/08/24/man-1071773_960_720.jpg</image>
+             <title>Data Scientist</title>
+             <button>
+                 <text>Click Here to Learn More</text>
+                 <url>https://www.sas.com/en_us/insights/analytics/what-is-a-data-scientist.html</url>
+             </button>
+         </card>
+         <delay>2</delay>
+         If you think I got it wrong, please type SHOW ME MORE for a full list of job descriptions.
+         If you would still like to talk to an advisor, please type SEE AN ADVISOR for more info on setting up an appointment. 
+     </template>
+ </category>
+ 
+</aiml>

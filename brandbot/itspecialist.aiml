@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    
+	<category>
+     <pattern>NO</pattern>
+     <topic>CREATIVE</topic>
+     <template>
+         IT Specialist might be a good position for you to start off in.
+         <delay>1</delay>
+         <card>
+             <image>https://www.publicdomainpictures.net/pictures/270000/velka/online-course.jpg</image>
+             <title>IT Specialist</title>
+             <button>
+                 <text>Click Here to Learn More</text>
+                 <url>https://www.jobhero.com/job-description/examples/information-technology/specialist</url>
+             </button>
+         </card>
+         <delay>2</delay>
+         If you think I got it wrong, please type SHOW ME MORE for a full list of job descriptions.
+         If you would still like to talk to an advisor, please type SEE AN ADVISOR for more info on setting up an appointment. 
+     </template>
+ </category>
+ 
+</aiml>

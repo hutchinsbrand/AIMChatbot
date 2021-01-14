@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    
+	<category>
+    <pattern>*</pattern>
+    <template>
+        Sorry, I'm smart, but I still have trouble understanding sometimes. please check your spelling,
+        or respond with only YES or NO. Thank you!
+    </template>
+  </category>
+ 
+ <category>
+     <pattern>SHOW ME MORE</pattern>
+     <template>
+         <carousel>
+             <card>
+                 <image>https://cdn.pixabay.com/photo/2015/12/01/08/24/man-1071773_960_720.jpg</image>
+                 <title>Data Scientist</title> 
+                 <button>
+                     <text>Click Here to Learn More</text>
+                     <url>https://www.sas.com/en_us/insights/analytics/what-is-a-data-scientist.html</url>
+                 </button>
+             </card>
+             <card>
+                 <image>https://www.thebluediamondgallery.com/typewriter/images/database-administrator.jpg</image>
+                 <title>Database Administrator</title>
+                 <button>
+                     <text>Click Here to Learn More</text>
+                     <url>https://www.careerexplorer.com/careers/database-administrator/</url>
+                 </button>
+             </card>
+             <card>
+                 <image>https://p0.pikist.com/photos/734/354/type-text-letters-black-and-white-industrial-technical-writing.jpg</image>
+                 <title>Technical Writer</title>
+                 <button>
+                     <text>Click Here to Learn More</text>
+                     <url>https://www.careerexplorer.com/careers/technical-writer/</url>
+                 </button>
+             </card>
+             <card>https://www.publicdomainpictures.net/pictures/270000/velka/online-course.jpg
+                 <image>https://cdn.pixabay.com/photo/2015/12/04/14/05/code-1076536_960_720.jpg</image>
+                 <title>Web Developer</title>
+                 <button>
+                     <text>Click Here to Learn More</text>
+                     <url>https://www.careerexplorer.com/careers/web-developer/</url>
+                 </button>
+             </card>
+             <card>
+                 <image>https://www.publicdomainpictures.net/pictures/270000/velka/online-course.jpg</image>
+                 <title>IT Specialist</title>
+                 <button>
+                     <text>Click Here to Learn More</text>
+                     <url>https://www.jobhero.com/job-description/examples/information-technology/specialist</url>
+                 </button>
+             </card>
+         </carousel>
+     </template>
+ </category>
+ 
+ <category>
+     <pattern>SEE AN ADVISOR</pattern>
+     <template>
+        Please call (555)555-5555 to schedule an appointment with your advisor. Thank you, and have a nice day!
+     </template>
+ </category>
+ 
+</aiml>

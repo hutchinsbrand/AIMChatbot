@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    
+	<category>
+     <pattern>NO</pattern>
+     <topic>COLLAB</topic>
+     <template>
+         That's cool. I work alone a lot as well.<split/>
+         If you like writing, you might be interested in a position as a Technical Writer.
+         <delay>1</delay>
+         <card>
+             <image>https://p0.pikist.com/photos/734/354/type-text-letters-black-and-white-industrial-technical-writing.jpg</image>
+             <title>Technical Writer</title>
+             <button>
+                 <text>Click Here to Learn More</text>
+                 <url>https://www.careerexplorer.com/careers/technical-writer/</url>
+             </button>
+         </card>
+         <delay>2</delay>
+         If you think I got it wrong, please type SHOW ME MORE for a full list of job descriptions.
+         If you would still like to talk to an advisor, please type SEE AN ADVISOR for more info on setting up an appointment. 
+     </template>
+ </category>
+ 
+</aiml>

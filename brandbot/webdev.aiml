@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    
+	<category>
+     <pattern>NO</pattern>
+     <topic>ORGANIZED</topic>
+     <template>
+         That's ok, I can be a little disorganized even at the best of times. Would you consider yourself a creative person?
+         <think>
+             <set name = "topic">CREATIVE</set>
+         </think>
+     </template>
+ </category>
+ 
+ <category>
+     <pattern>YES</pattern>
+     <topic>CREATIVE</topic>
+     <template>
+         Ah a true artist! You might be interested in a career as a Web Developer. 
+         Note, there is a lot of flexibility here (front-end, back-end, full-stack).
+         <delay>1</delay>
+         <card>
+             <image>https://cdn.pixabay.com/photo/2015/12/04/14/05/code-1076536_960_720.jpg</image>
+             <title>Web Developer</title>
+             <button>
+                 <text>Click Here to Learn More</text>
+                 <url>https://www.careerexplorer.com/careers/web-developer/</url>
+             </button>
+         </card>
+         <delay>2</delay>
+         If you think I got it wrong, please type SHOW ME MORE for a full list of job descriptions.
+         If you would still like to talk to an advisor, please type SEE AN ADVISOR for more info on setting up an appointment.     
+     </template>
+ </category>
+ 
+</aiml>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    
+	<category>
+     <pattern>NO</pattern>
+     <topic>MATH</topic>
+     <template>
+         Not a big fan of statistical models, huh? That's alright. Do you work well in a team environment with a lot of collaboration?
+         <think>
+             <set name = "topic">COLLAB</set>
+         </think>
+     </template>
+ </category>
+ 
+ <category>
+     <pattern>YES</pattern>
+     <topic>COLLAB</topic>
+     <template>
+         Alright! You might be interested in a position as a Database Administrator.
+         <delay>1</delay>
+         <card>
+             <image>https://www.thebluediamondgallery.com/typewriter/images/database-administrator.jpg</image>
+             <title>Database Administrator</title>
+             <button>
+                 <text>Click Here to Learn More</text>
+                 <url>https://www.careerexplorer.com/careers/database-administrator/</url>
+             </button>
+         </card>
+         <delay>2</delay>
+         If you think I got it wrong, please type SHOW ME MORE for a full list of job descriptions.
+         If you would still like to talk to an advisor, please type SEE AN ADVISOR for more info on setting up an appointment. 
+     </template>
+ </category>
+ 
+</aiml>

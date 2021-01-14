@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    
+	<category>
+     <pattern><set>greetings</set></pattern>
+     <template>
+         Hi! Welcome to WGU's career advisement center. My name is Hoot, and 
+         I am a chatbot designed to help you find a career that fits your interests
+         and strengths in the computer science field. Shall we get started?
+     <think>
+         <set name = "topic">INFO GATHER</set>
+     </think>
+     </template>
+ </category>
+ 
+ <category>
+     <pattern><set>positives</set></pattern>
+     <topic>INFO GATHER</topic>
+     <template>
+         OK! First, I'd like to get to know you a bit. What's your full name?
+     </template>
+ </category>
+ 
+ <category>
+     <pattern>* *</pattern>
+     <topic>INFO GATHER</topic>
+     <template>
+         It's nice to meet you, <set name = "firstname"><star/></set>.
+         <delay>2</delay>
+         I'm going to ask you a few questions to get a better idea of what types of jobs you might be interested in.
+         Please answer with a YES or NO please.
+         <delay>2</delay>
+         First question, would you describe yourself as a person who loves organizing things?
+         <think>
+             <set name = "lastname"><star index = "2"/></set>
+             <set name = "topic">ORGANIZED</set>
+         </think>
+     </template>
+ </category>
+ 
+ <category>
+     <pattern><set>negatives</set></pattern>
+     <topic>INFO GATHER</topic>
+     <template>
+         That's fine. Let me know if you need any help. I'll be right here!
+     </template>
+ </category>
+ 
+</aiml>
